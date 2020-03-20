@@ -13,7 +13,7 @@ sc = spark.sparkContext # make sure we have Spark 2.3+
 def geocodeAddress(streetaddress):
     
     streetaddress.replace(' ', '+')
-    apikey = 'AIzaSyAiPwGAZofwSsPTqdwmyH3kHce28Md05WA'
+    apikey = ''
     url = 'https://maps.googleapis.com/maps/api/geocode/json?address='+streetaddress+'&key='+apikey
     
     req = requests.get(url)
